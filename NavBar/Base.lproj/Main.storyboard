@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="NavBar" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="acq-tg-vnE">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="sj0-9Q-hw2"/>
+                                </constraints>
+                                <items>
+                                    <navigationItem title="🍳 timer" id="jmD-Vl-FPf">
+                                        <barButtonItem key="leftBarButtonItem" systemItem="play" id="ep1-kF-1au">
+                                            <connections>
+                                                <action selector="Play:" destination="BYZ-38-t0r" id="Mhn-c3-qtu"/>
+                                            </connections>
+                                        </barButtonItem>
+                                        <barButtonItem key="rightBarButtonItem" style="done" systemItem="pause" id="pZZ-to-vbw">
+                                            <connections>
+                                                <action selector="Pause:" destination="BYZ-38-t0r" id="lrk-JN-W2r"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hit play to start." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AXW-pI-Suf">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="gTQ-9w-1cD"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="6bc537a241ffc746acb7d2180d2253d8.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="EqR-ge-Dvb">
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="EqR-ge-Dvb" secondAttribute="height" multiplier="107:95" id="bNr-03-bQc"/>
+                                </constraints>
+                            </imageView>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LqB-5t-1nj">
+                                <items>
+                                    <barButtonItem title="-10" style="plain" id="GXz-bS-ejV">
+                                        <connections>
+                                            <action selector="sub10:" destination="BYZ-38-t0r" id="HzQ-jc-qJV"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="xT1-pJ-tSf"/>
+                                    <barButtonItem title="Reset" id="F1X-z1-eX9">
+                                        <connections>
+                                            <action selector="Reset:" destination="BYZ-38-t0r" id="Szw-zd-8eq"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="nh9-HP-IAo"/>
+                                    <barButtonItem title="+10" id="0MA-8q-lvi">
+                                        <connections>
+                                            <action selector="add10:" destination="BYZ-38-t0r" id="Gyu-aC-MvU"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                        </subviews>
+                        <color key="backgroundColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="EqR-ge-Dvb" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="1aU-qC-GlO"/>
+                            <constraint firstItem="EqR-ge-Dvb" firstAttribute="top" secondItem="acq-tg-vnE" secondAttribute="bottom" constant="20" id="25s-qd-TlC"/>
+                            <constraint firstItem="AXW-pI-Suf" firstAttribute="top" secondItem="EqR-ge-Dvb" secondAttribute="bottom" constant="20" id="A1O-lL-cCc"/>
+                            <constraint firstItem="LqB-5t-1nj" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="AM3-Dp-eeb"/>
+                            <constraint firstItem="AXW-pI-Suf" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="5" id="Eeh-4X-q6A"/>
+                            <constraint firstItem="AXW-pI-Suf" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Er9-Ti-3La"/>
+                            <constraint firstItem="acq-tg-vnE" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="Yak-eP-T3T"/>
+                            <constraint firstItem="acq-tg-vnE" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="e7T-WT-Kyo"/>
+                            <constraint firstItem="acq-tg-vnE" firstAttribute="trailing" secondItem="LqB-5t-1nj" secondAttribute="trailing" id="h13-Qw-XZH"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="AXW-pI-Suf" secondAttribute="trailing" constant="5" id="l5n-QI-UfD"/>
+                            <constraint firstItem="acq-tg-vnE" firstAttribute="leading" secondItem="LqB-5t-1nj" secondAttribute="leading" id="nPB-fI-QgZ"/>
+                            <constraint firstItem="acq-tg-vnE" firstAttribute="centerX" secondItem="EqR-ge-Dvb" secondAttribute="centerX" id="xPX-Sd-B4h"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="displayedTime" destination="AXW-pI-Suf" id="TDo-e2-9hg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="116" y="121.88905547226388"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="6bc537a241ffc746acb7d2180d2253d8.jpg" width="320" height="320"/>
+    </resources>
+</document>
