@@ -14,6 +14,8 @@ class ViewController: UIViewController {
     var timer = Timer()
     @IBOutlet weak var displayedTime: UILabel!
     var time = 210
+    
+    var player = AVAudioPlayer()
         
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -42,7 +44,7 @@ class ViewController: UIViewController {
         timer.invalidate()
         time = 210
         displayedTime.text = String(time)
-        stopSoundEffect()
+        player.stop()
         view.backgroundColor = UIColor.white
     }
     
@@ -52,15 +54,23 @@ class ViewController: UIViewController {
         
         if time <= 0 {
             displayedTime.text = "Well, your eggs are ready! 🍳"
-            playSoundEffect("Aloe Blacc - The Man.mp3")
+            playAudio()
             view.backgroundColor = UIColor.blue
             timer.invalidate()
         }
     }
     
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    //Plays attached audio file
+    func playAudio() {
+        
+        let audioPath = Bundle.main.path(forResource: "Aloe Blacc - The Man", ofType: ".mp3")
+        
+        do {
+            try player = AVAudioPlayer(contentsOf: URL(fileURLWithPath: audioPath!))
+            player.play()
+        } catch {
+            print("There was an error playing your audio file.")
+        }
     }
 
 

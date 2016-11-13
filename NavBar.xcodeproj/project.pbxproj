@@ -12,7 +12,6 @@
 		E765BB9A1D93AB950018B367 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E765BB981D93AB950018B367 /* Main.storyboard */; };
 		E765BB9C1D93AB950018B367 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E765BB9B1D93AB950018B367 /* Assets.xcassets */; };
 		E765BB9F1D93AB950018B367 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E765BB9D1D93AB950018B367 /* LaunchScreen.storyboard */; };
-		E77B55541D93CF8300926508 /* AudioStuff.swift in Sources */ = {isa = PBXBuildFile; fileRef = E77B55531D93CF8300926508 /* AudioStuff.swift */; };
 		E77B55561D93D14300926508 /* Aloe Blacc - The Man.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E77B55551D93D14300926508 /* Aloe Blacc - The Man.mp3 */; };
 		E77B55581D93D89800926508 /* 6bc537a241ffc746acb7d2180d2253d8.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E77B55571D93D89800926508 /* 6bc537a241ffc746acb7d2180d2253d8.jpg */; };
 /* End PBXBuildFile section */
@@ -25,7 +24,6 @@
 		E765BB9B1D93AB950018B367 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E765BB9E1D93AB950018B367 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E765BBA01D93AB950018B367 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E77B55531D93CF8300926508 /* AudioStuff.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioStuff.swift; sourceTree = "<group>"; };
 		E77B55551D93D14300926508 /* Aloe Blacc - The Man.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Aloe Blacc - The Man.mp3"; sourceTree = "<group>"; };
 		E77B55571D93D89800926508 /* 6bc537a241ffc746acb7d2180d2253d8.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 6bc537a241ffc746acb7d2180d2253d8.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -62,7 +60,6 @@
 			children = (
 				E765BB961D93AB950018B367 /* ViewController.swift */,
 				E765BB981D93AB950018B367 /* Main.storyboard */,
-				E77B55531D93CF8300926508 /* AudioStuff.swift */,
 				E77B55571D93D89800926508 /* 6bc537a241ffc746acb7d2180d2253d8.jpg */,
 				E77B55551D93D14300926508 /* Aloe Blacc - The Man.mp3 */,
 				E765BB9B1D93AB950018B367 /* Assets.xcassets */,
@@ -158,7 +155,6 @@
 			files = (
 				E765BB971D93AB950018B367 /* ViewController.swift in Sources */,
 				E765BB951D93AB950018B367 /* AppDelegate.swift in Sources */,
-				E77B55541D93CF8300926508 /* AudioStuff.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
